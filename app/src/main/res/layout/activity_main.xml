@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layVertMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:paddingTop="70dp"
+    android:paddingBottom="20dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/pxtCharName"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="textPersonName|textCapWords"
+        android:text="Porgy" />
+
+    <Button
+        android:id="@+id/btnGenChar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:onClick="onClickCharGen"
+        android:text="@string/genChar"
+        android:textAlignment="center" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:id="@+id/tblStatName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/txtStr"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="Str"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/txtDex"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="Dex"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/txtAgi"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="Agi"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/txtEnd"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="End"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/txtInt"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="Int"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/txtWis"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="Wis"
+                android:textAlignment="center" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tblStatValue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/txtStrInt"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/txtDexInt"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal|center_vertical"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/txtEndInt"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal|center_vertical"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/txtIntInt"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal|center_vertical"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/txtWisInt"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal|center_vertical"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/txtAgiInt"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal|center_vertical"
+                android:textAlignment="center" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recSavedChars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/btnSaveChar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickSaveChar"
+        android:text="@string/saveChar" />
+
+</LinearLayout>

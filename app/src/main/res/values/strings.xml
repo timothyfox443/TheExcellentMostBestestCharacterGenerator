@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">The Excellent Most Bestest Character Generator</string>
+    <string name="saveChar">Save Character</string>
+    <string name="genChar">Generate Character</string>
+</resources>
