@@ -13,12 +13,12 @@ public class MainActivity extends AppCompatActivity
     private Button btnRollEm;
     private Button btnSave;
     private TextView txtCharName;
-    private TextView strText;
-    private TextView dexText;
-    private TextView agiText;
-    private TextView endText;
-    private TextView intText;
-    private TextView wisText;
+    private TextView strText; // strength value
+    private TextView dexText; // dexterity value
+    private TextView agiText; // agility value
+    private TextView endText; // endurance value
+    private TextView intText; // intelligence value
+    private TextView wisText; // wisdom value
 
     private Random rand;
 
@@ -51,8 +51,8 @@ public class MainActivity extends AppCompatActivity
 
     public void onClickCharGen (android.view.View view)
     {
-        int strRoll = rollDie(3); //add comment
-        strText.setText(String.valueOf(strRoll));
+        int strRoll = rollDie(3); // calls rollDie to generate 3-18 value
+        strText.setText(String.valueOf(strRoll)); // sends value to associated textView
 
         int dexRoll = rollDie(3);
         dexText.setText(String.valueOf(dexRoll));
@@ -75,12 +75,14 @@ public class MainActivity extends AppCompatActivity
 
     }
 
-    public int rollDie (int times)
+    public int rollDie (int times)  //takes in the number of times to run the for loop (roll die)
     {
         int dieSum = 0;
         for (int i = 1; i < times+1; i++)
         {
-            dieSum += rand.nextInt(7);
+            dieSum += 1 + rand.nextInt(6); // creates a random number 0-5 and adds 1 (1-6)
+                                                 // and sums the values to return to the caller
+
         }
         return dieSum;
     }
