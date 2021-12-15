@@ -1,6 +1,7 @@
 package com.example.theexcellentmostbestestcharactergenerator;
 
 import android.content.Context;
+
 import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
@@ -20,8 +21,8 @@ public abstract class CharacterRoomDatabase extends RoomDatabase
             {
                 if (INSTANCE == null)
                 {
-                    INSTANCE = Room.databaseBuilder(
-                            context.getApplicationContext(),
+                    INSTANCE =
+                            Room.databaseBuilder(context.getApplicationContext(),
                             CharacterRoomDatabase.class, "character_database").build();
                 }
             }

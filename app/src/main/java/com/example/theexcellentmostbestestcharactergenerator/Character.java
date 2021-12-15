@@ -14,7 +14,7 @@ public class Character
     private int charId; // this is the primary key for the Character class
 
     @ColumnInfo(name = "Name")
-    private String charName;  // this is the character's strength (Str) attribute
+    private String charName;  // this is the character's name
 
     @ColumnInfo(name = "Strength")
     private int charStr;  // this is the character's strength (Str) attribute
@@ -51,34 +51,27 @@ public class Character
     {
         return this.charId;
     }
-
     public String getCharName() { return this.charName; }
-
     public int getCharStr()
     {
         return this.charStr;
     }
-
     public int getCharDex()
     {
         return this.charDex;
     }
-
     public int getCharAgi()
     {
         return this.charAgi;
     }
-
     public int getCharEnd()
     {
         return this.charEnd;
     }
-
     public int getCharInt()
     {
         return this.charInt;
     }
-
     public int getCharWis()
     {
         return this.charWis;
@@ -88,32 +81,27 @@ public class Character
     {
         this.charId = charId;
     }
-
+    public void setCharName(String charName) { this.charName = charName; }
     public void setCharStr(int charStr)
     {
         this.charStr = charStr;
     }
-
     public void setCharDex(int charDex)
     {
         this.charDex = charDex;
     }
-
     public void setCharAgi(int charAgi)
     {
         this.charAgi = charAgi;
     }
-
     public void setCharEnd(int charEnd)
     {
         this.charEnd = charEnd;
     }
-
     public void setCharInt(int charInt)
     {
         this.charInt = charInt;
     }
-
     public void setCharWis(int charWis)
     {
         this.charWis = charWis;
