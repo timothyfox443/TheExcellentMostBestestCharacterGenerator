@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity
 
     public void onClickCharGen (android.view.View view)
     {
-        int strRoll = rollDie(3);
+        int strRoll = rollDie(3); //add comment
         strText.setText(String.valueOf(strRoll));
 
         int dexRoll = rollDie(3);
